@@ -61,21 +61,20 @@
             }
 
             function resetGame() {
-                resetSnake();
-                apple = {
+                snake = {
                     x: getRandomInt(0, boardWidth),
                     y: getRandomInt(0, boardHeight)
                 }
-
+                resetApple();
                 state = {
                     x_distance: snake.x - apple.x,
                     y_distance: snake.y - apple.y
                 }
             }
 
-            function resetSnake() {
+            function resetApple() {
                 steps = 0;
-                snake = {
+                apple = {
                     x: getRandomInt(0, boardWidth),
                     y: getRandomInt(0, boardHeight)
                 }
@@ -103,7 +102,7 @@
                 } else if (action === 'X') {
                     eaten_apples += 1;
                     statusLabel.textContent = 'Ate ' + eaten_apples + ' apples!';
-                    resetSnake();
+                    resetApple();
                 }
 
                 state.x_distance = snake.x - apple.x;
