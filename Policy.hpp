@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 #include <string>
+#include <iostream>
+#include <fstream>
 #include "Utils.hpp"
 
 using namespace std;
@@ -20,6 +22,7 @@ public:
     
     Action randomPolicy[POLICY_HEIGHT][POLICY_WIDTH];
     void printPolicy();
+    void writePolicyToFile(string filename);
     
 private:
     Utils utils;

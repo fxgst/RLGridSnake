@@ -14,6 +14,7 @@ int main(int argc, const char * argv[]) {
     
     printf("Learned policy:\n");
     p_opt.printPolicy();
+    p_opt.writePolicyToFile("policy");
    
     return 0;
 }
