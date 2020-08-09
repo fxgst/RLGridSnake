@@ -1,15 +1,15 @@
 #ifndef Utils_hpp
 #define Utils_hpp
 
-#define _BOARD_WIDTH        10
-#define _BOARD_HEIGHT       10
+#define _BOARD_WIDTH        20
+#define _BOARD_HEIGHT       20
 
 #define _EATEN_REWARD       1
 #define _OUTSIDE_REWARD     -1.0001
 #define _STEP_REWARD        0
 #define _INF_LOOP_REWARD    -1
 
-#define _EPISODES           10000
+#define _EPISODES           50000
 #define _GAMMA              0.9
 
 #include <stdio.h>
